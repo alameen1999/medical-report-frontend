@@ -1,0 +1,137 @@
+/* .App {
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.entries {
+    display: flex;
+    gap: 15px;
+}
+
+.entry{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.delete{
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(245, 100, 100);
+}
+
+.update{
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: rgb(244, 142, 74);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+} */
+
+
+.App {
+    height: 100vh;
+    padding: 5% 10%; /* Responsive padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f4f4f9; /* Softer background color */
+    font-family: 'Open Sans', sans-serif; /* Readable font */
+}
+
+.entries {
+    display: flex;
+    gap: 30px; /* Increased gap */
+    flex-wrap: wrap; /* Wrap entries if needed */
+}
+
+.entry {
+    flex: 0 1 300px; /* Each entry has a base width but can grow and shrink */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.delete, .update {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px; /* Rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete {
+    background-color: #ffebee; /* Softer shade for delete */
+    color: #ff5252;
+}
+
+.delete:hover {
+    background-color: #ffcdd2; /* Slightly darker on hover */
+}
+
+.update {
+    background-color: #e3f2fd; /* Softer shade for update */
+    color: #64b5f6;
+}
+
+.update:hover {
+    background-color: #bbdefb; /* Slightly darker on hover */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: rgb(244, 142, 74);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+} 
